@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+body {
+    background-color: #fff;
+}
+
+.header {
+    background-color: #244542;
+    height: 50px;
+    border-bottom: 1px solid grey;
+    text-align: center;
+}
+
+.header p {
+ padding-top: 5px;
+ color: white;
+ font-size: 25px;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ferramentas {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    margin-top: 30px;
+}
+
+.titulo-ferramentas {
+    height: 30px;
+    background-color: #244542;
+    color: #fff;
+    text-align: center;
+    padding-top: 4px;
+}
+
+.lista-ferramentas {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 700px) { 
+    .lista-ferramentas {
+        flex-direction: column;
+    }
+    .ferramentas {
+        width: 80%;
+    }
+}
+
+.lista-ferramentas ul {
+    list-style-type: none;   
+}
+
+.lista-ferramentas ul li {
+    padding: 20px;
+    text-align: center;
+}
+
+.lista-ferramentas ul li:hover {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.lista-ferramentas ul li a {
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px;
+}
+
+lista-ferramentas-col1 ul li a,
+lista-ferramentas-col2 ul li a {
+color: blue;
+}
+
+.lista-ferramentas > * {
+    flex: 1 1 0;
+}
